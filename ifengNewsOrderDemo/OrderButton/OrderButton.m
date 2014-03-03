@@ -20,9 +20,11 @@
     }
     return self;
 }
-+ (id)orderButtonWithViewController:(UIViewController *)vc{
++ (id)orderButtonWithViewController:(UIViewController *)vc titleArr:(NSArray *)titleArr urlStringArr:(NSArray *)urlStringArr{
     OrderButton * orderButton = [OrderButton buttonWithType:UIButtonTypeCustom];
     [orderButton setVc:vc];
+    [orderButton setTitleArr:titleArr];
+    [orderButton setUrlStringArr:urlStringArr];
     [orderButton setImage:[UIImage imageNamed:OrderButtonImage] forState:UIControlStateNormal];
     [orderButton setImage:[UIImage imageNamed:OrderButtonImageSelected] forState:UIControlStateHighlighted];
     [orderButton setFrame:CGRectMake(OrderButtonFrameOriginX, OrderButtonFrameOriginY, OrderButtonFrameSizeX, OrderButtonFrameSizeY)];
@@ -34,12 +36,13 @@
 + (void)orderViewOut:(id)sender{
     
     OrderButton * orderButton = (OrderButton *)sender;
-    NSLog(@"************%d",[[orderButton.vc.view subviews] count]);
     if([[orderButton.vc.view subviews] count]>1){
 //        [[[orderButton.vc.view subviews]objectAtIndex:1] removeFromSuperview];
         NSLog(@"%@",[orderButton.vc.view subviews]);
     }
     OrderViewController * orderVC = [[OrderViewController alloc] init];
+    orderVC.titleArr = orderButton.titleArr;
+    orderVC.urlStringArr = orderButton.urlStringArr;
     UIView * orderView = [orderVC view];
     [orderView setFrame:CGRectMake(0, - orderButton.vc.view.bounds.size.height, orderButton.vc.view.bounds.size.width, orderButton.vc.view.bounds.size.height)];
     [orderView setBackgroundColor:[UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1.0]];
@@ -58,6 +61,8 @@
 - (void)dealloc
 {
     [_vc release];
+    [_titleArr release];
+    [_urlStringArr release];
     [super dealloc];
 }
 /*

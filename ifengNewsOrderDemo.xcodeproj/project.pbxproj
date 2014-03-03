@@ -106,20 +106,20 @@
 			isa = PBXGroup;
 			children = (
 				C292B96D18C4299400B0440C /* Header.h */,
-				C292B96E18C4299400B0440C /* order_back.png */,
-				C292B96F18C4299400B0440C /* order_back_select.png */,
-				C292B97018C4299400B0440C /* order_background.png */,
-				C292B97118C4299400B0440C /* order_drag_move_bg.png */,
 				C292B97218C4299400B0440C /* OrderButton.h */,
 				C292B97318C4299400B0440C /* OrderButton.m */,
 				C292B97418C4299400B0440C /* OrderViewController.h */,
 				C292B97518C4299400B0440C /* OrderViewController.m */,
-				C292B97618C4299400B0440C /* topnav_orderbutton.png */,
-				C292B97718C4299400B0440C /* topnav_orderbutton_selected_unselected.png */,
 				C292B97818C4299400B0440C /* TouchView.h */,
 				C292B97918C4299400B0440C /* TouchView.m */,
 				C292B97A18C4299400B0440C /* TouchViewModel.h */,
 				C292B97B18C4299400B0440C /* TouchViewModel.m */,
+				C292B96E18C4299400B0440C /* order_back.png */,
+				C292B96F18C4299400B0440C /* order_back_select.png */,
+				C292B97018C4299400B0440C /* order_background.png */,
+				C292B97118C4299400B0440C /* order_drag_move_bg.png */,
+				C292B97618C4299400B0440C /* topnav_orderbutton.png */,
+				C292B97718C4299400B0440C /* topnav_orderbutton_selected_unselected.png */,
 			);
 			path = OrderButton;
 			sourceTree = "<group>";
@@ -426,10 +426,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: YaYun Cui (QG9C9G6T78)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ifengNewsOrderDemo/ifengNewsOrderDemo-Prefix.pch";
 				INFOPLIST_FILE = "ifengNewsOrderDemo/ifengNewsOrderDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E51CF273-0C5B-455B-97E2-599430489CF5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -440,10 +442,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: YaYun Cui (QG9C9G6T78)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ifengNewsOrderDemo/ifengNewsOrderDemo-Prefix.pch";
 				INFOPLIST_FILE = "ifengNewsOrderDemo/ifengNewsOrderDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E51CF273-0C5B-455B-97E2-599430489CF5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

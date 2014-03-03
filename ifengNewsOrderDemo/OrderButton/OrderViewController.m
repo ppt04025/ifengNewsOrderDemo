@@ -31,30 +31,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(110, 25, 100, 40)];
-    _titleLabel.text = @"我的订阅";
-    [_titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [_titleLabel setTextColor:[UIColor colorWithRed:187/255.0 green:1/255.0 blue:1/255.0 alpha:1.0]];
-    [self.view addSubview:_titleLabel];
- 
-    
-    
-    _titleLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(110, TableStartPointY+ ButtonHeight * 2 + 22, 100, 20)];
-    _titleLabel2.text = @"更多频道";
-    [_titleLabel2 setFont:[UIFont systemFontOfSize:10]];
-    [_titleLabel2 setTextAlignment:NSTextAlignmentCenter];
-    [_titleLabel2 setTextColor:[UIColor grayColor]];
-    [self.view addSubview:_titleLabel2];
-    
-    
     NSString * string = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString * filePath = [string stringByAppendingString:@"/modelArray0.swh"];
     NSString * filePath1 = [string stringByAppendingString:@"/modelArray1.swh"];
-
+    
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-        NSArray * channelListArr = [NSArray arrayWithObjects:ChannelList, nil];
-        NSArray * channelUrlStringListArr = [NSArray arrayWithObjects:ChannelUrlStringList, nil];
+        NSArray * channelListArr = self.titleArr;
+        NSArray * channelUrlStringListArr = self.urlStringArr;
         NSMutableArray * mutArr = [NSMutableArray array];
         for (int i = 0; i < [channelListArr count]; i++) {
             NSString * title = [channelListArr objectAtIndex:i];
@@ -79,6 +63,27 @@
     NSArray * modelArr2 = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath1];
     _viewArr1 = [[NSMutableArray alloc] init];
     _viewArr2 = [[NSMutableArray alloc] init];
+    
+    
+    
+    
+    
+    _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(110, 25, 100, 40)];
+    _titleLabel.text = @"我的订阅";
+    [_titleLabel setTextAlignment:NSTextAlignmentCenter];
+    [_titleLabel setTextColor:[UIColor colorWithRed:187/255.0 green:1/255.0 blue:1/255.0 alpha:1.0]];
+    [self.view addSubview:_titleLabel];
+    
+    
+    
+    _titleLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(110, TableStartPointY + ButtonHeight * ([self array2StartY] - 1) + 22, 100, 20)];
+    _titleLabel2.text = @"更多频道";
+    [_titleLabel2 setFont:[UIFont systemFontOfSize:10]];
+    [_titleLabel2 setTextAlignment:NSTextAlignmentCenter];
+    [_titleLabel2 setTextColor:[UIColor grayColor]];
+    [self.view addSubview:_titleLabel2];
+    
+    
     for (int i = 0; i < _modelArr1.count; i++) {
         TouchView * touchView = [[TouchView alloc] initWithFrame:CGRectMake(TableStartPointX + ButtonWidth * (i%5), TableStartPointY + ButtonHeight * (i/5), ButtonWidth, ButtonHeight)];
         [touchView setBackgroundColor:[UIColor colorWithRed:210/255.0 green:210/255.0 blue:210/255.0 alpha:1.0]];
@@ -101,7 +106,6 @@
         [touchView setTouchViewModel:[_modelArr1 objectAtIndex:i]];
         
         [self.view addSubview:touchView];
-
     }
     
     for (int i = 0; i < modelArr2.count; i++) {
@@ -125,6 +129,13 @@
         [touchView release];
         
     }
+    
+    
+
+    
+    
+
+    
 
     UIButton * backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [backButton setFrame:CGRectMake(self.view.bounds.size.width - 56, self.view.bounds.size.height - 44, 56, 44)];
@@ -160,6 +171,8 @@
 }
 
 - (void)dealloc{
+    [_titleArr release];
+    [_urlStringArr release];
     [_titleLabel2 release];
     [_titleLabel release];
     [_viewArr1 release];
@@ -168,8 +181,8 @@
 }
 
 
-- (int)array2StartY{
-    int y = 0;
+- (unsigned long )array2StartY{
+    unsigned long y = 0;
 
     y = _modelArr1.count/5 + 2;
     if (_modelArr1.count%5 == 0) {

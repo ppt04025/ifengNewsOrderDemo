@@ -17,4 +17,6 @@
 
 @property (nonatomic,retain)UILabel * titleLabel;
 @property (nonatomic,retain)UILabel * titleLabel2;
+@property (nonatomic,retain)NSArray * titleArr;
+@property (nonatomic,retain)NSArray * urlStringArr;
 @end

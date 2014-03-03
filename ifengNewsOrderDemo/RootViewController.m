@@ -29,7 +29,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    OrderButton * orderButton = [OrderButton orderButtonWithViewController:self];
+    
+    OrderButton * orderButton = [OrderButton orderButtonWithViewController:self titleArr:[NSArray arrayWithObjects:ChannelList, nil] urlStringArr:[NSArray arrayWithObjects:ChannelUrlStringList, nil]];
     [self.view addSubview:orderButton];
     
 }
