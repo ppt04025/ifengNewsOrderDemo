@@ -46,7 +46,7 @@
             TouchViewModel * touchViewModel = [[TouchViewModel alloc] initWithTitle:title urlString:urlString];
             [mutArr addObject:touchViewModel];
             [touchViewModel release];
-            if (i == DefaultCountOfUpsideList - 1) {
+            if (i == KDefaultCountOfUpsideList - 1) {
                 NSData * data = [NSKeyedArchiver archivedDataWithRootObject:mutArr];
                 [data writeToFile:filePath atomically:YES];
                 [mutArr removeAllObjects];
@@ -76,7 +76,7 @@
     
     
     
-    _titleLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(110, TableStartPointY + ButtonHeight * ([self array2StartY] - 1) + 22, 100, 20)];
+    _titleLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(110, KTableStartPointY + KButtonHeight * ([self array2StartY] - 1) + 22, 100, 20)];
     _titleLabel2.text = @"更多频道";
     [_titleLabel2 setFont:[UIFont systemFontOfSize:10]];
     [_titleLabel2 setTextAlignment:NSTextAlignmentCenter];
@@ -85,7 +85,7 @@
     
     
     for (int i = 0; i < _modelArr1.count; i++) {
-        TouchView * touchView = [[TouchView alloc] initWithFrame:CGRectMake(TableStartPointX + ButtonWidth * (i%5), TableStartPointY + ButtonHeight * (i/5), ButtonWidth, ButtonHeight)];
+        TouchView * touchView = [[TouchView alloc] initWithFrame:CGRectMake(KTableStartPointX + KButtonWidth * (i%5), KTableStartPointY + KButtonHeight * (i/5), KButtonWidth, KButtonHeight)];
         [touchView setBackgroundColor:[UIColor colorWithRed:210/255.0 green:210/255.0 blue:210/255.0 alpha:1.0]];
         
         [_viewArr1 addObject:touchView];
@@ -109,7 +109,7 @@
     }
     
     for (int i = 0; i < modelArr2.count; i++) {
-        TouchView * touchView = [[TouchView alloc] initWithFrame:CGRectMake(TableStartPointX + ButtonWidth * (i%5), TableStartPointY + [self array2StartY] * ButtonHeight + ButtonHeight * (i/5), ButtonWidth, ButtonHeight)];
+        TouchView * touchView = [[TouchView alloc] initWithFrame:CGRectMake(KTableStartPointX + KButtonWidth * (i%5), KTableStartPointY + [self array2StartY] * KButtonHeight + KButtonHeight * (i/5), KButtonWidth, KButtonHeight)];
         
         [touchView setBackgroundColor:[UIColor colorWithRed:210/255.0 green:210/255.0 blue:210/255.0 alpha:1.0]];
         

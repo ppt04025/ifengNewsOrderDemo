@@ -32,7 +32,7 @@
 	// Do any additional setup after loading the view.
     
     
-    OrderButton * orderButton = [OrderButton orderButtonWithViewController:self titleArr:[NSArray arrayWithObjects:ChannelList, nil] urlStringArr:[NSArray arrayWithObjects:ChannelUrlStringList, nil]];
+    OrderButton * orderButton = [OrderButton orderButtonWithViewController:self titleArr:[NSArray arrayWithObjects:KChannelList, nil] urlStringArr:[NSArray arrayWithObjects:KChannelUrlStringList, nil]];
     [self.view addSubview:orderButton];
     [orderButton addTarget:self action:@selector(orderViewOut:) forControlEvents:UIControlEventTouchUpInside];
 

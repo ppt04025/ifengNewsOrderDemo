@@ -25,9 +25,9 @@
     [orderButton setVc:vc];
     [orderButton setTitleArr:titleArr];
     [orderButton setUrlStringArr:urlStringArr];
-    [orderButton setImage:[UIImage imageNamed:OrderButtonImage] forState:UIControlStateNormal];
-    [orderButton setImage:[UIImage imageNamed:OrderButtonImageSelected] forState:UIControlStateHighlighted];
-    [orderButton setFrame:CGRectMake(OrderButtonFrameOriginX, OrderButtonFrameOriginY, OrderButtonFrameSizeX, OrderButtonFrameSizeY)];
+    [orderButton setImage:[UIImage imageNamed:KOrderButtonImage] forState:UIControlStateNormal];
+    [orderButton setImage:[UIImage imageNamed:KOrderButtonImageSelected] forState:UIControlStateHighlighted];
+    [orderButton setFrame:CGRectMake(KOrderButtonFrameOriginX, KOrderButtonFrameOriginY, KOrderButtonFrameSizeX, KOrderButtonFrameSizeY)];
     
     return orderButton;
 
