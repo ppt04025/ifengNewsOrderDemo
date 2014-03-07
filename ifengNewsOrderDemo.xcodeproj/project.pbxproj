@@ -7,17 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C292B97E18C4299400B0440C /* order_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C292B96E18C4299400B0440C /* order_back.png */; };
-		C292B97F18C4299400B0440C /* order_back_select.png in Resources */ = {isa = PBXBuildFile; fileRef = C292B96F18C4299400B0440C /* order_back_select.png */; };
-		C292B98018C4299400B0440C /* order_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C292B97018C4299400B0440C /* order_background.png */; };
-		C292B98118C4299400B0440C /* order_drag_move_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C292B97118C4299400B0440C /* order_drag_move_bg.png */; };
-		C292B98218C4299400B0440C /* OrderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C292B97318C4299400B0440C /* OrderButton.m */; };
-		C292B98318C4299400B0440C /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C292B97518C4299400B0440C /* OrderViewController.m */; };
-		C292B98418C4299400B0440C /* topnav_orderbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C292B97618C4299400B0440C /* topnav_orderbutton.png */; };
-		C292B98518C4299400B0440C /* topnav_orderbutton_selected_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = C292B97718C4299400B0440C /* topnav_orderbutton_selected_unselected.png */; };
-		C292B98618C4299400B0440C /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C292B97918C4299400B0440C /* TouchView.m */; };
-		C292B98718C4299400B0440C /* TouchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C292B97B18C4299400B0440C /* TouchViewModel.m */; };
-		C292B98818C4299400B0440C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C292B97D18C4299400B0440C /* RootViewController.m */; };
 		C2CF1D5918BDDCDA005A582B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CF1D5818BDDCDA005A582B /* Foundation.framework */; };
 		C2CF1D5B18BDDCDA005A582B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CF1D5A18BDDCDA005A582B /* CoreGraphics.framework */; };
 		C2CF1D5D18BDDCDA005A582B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CF1D5C18BDDCDA005A582B /* UIKit.framework */; };
@@ -43,23 +32,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C292B96D18C4299400B0440C /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		C292B96E18C4299400B0440C /* order_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order_back.png; sourceTree = "<group>"; };
-		C292B96F18C4299400B0440C /* order_back_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order_back_select.png; sourceTree = "<group>"; };
-		C292B97018C4299400B0440C /* order_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order_background.png; sourceTree = "<group>"; };
-		C292B97118C4299400B0440C /* order_drag_move_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order_drag_move_bg.png; sourceTree = "<group>"; };
-		C292B97218C4299400B0440C /* OrderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderButton.h; sourceTree = "<group>"; };
-		C292B97318C4299400B0440C /* OrderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderButton.m; sourceTree = "<group>"; };
-		C292B97418C4299400B0440C /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
-		C292B97518C4299400B0440C /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
-		C292B97618C4299400B0440C /* topnav_orderbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topnav_orderbutton.png; sourceTree = "<group>"; };
-		C292B97718C4299400B0440C /* topnav_orderbutton_selected_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topnav_orderbutton_selected_unselected.png; sourceTree = "<group>"; };
-		C292B97818C4299400B0440C /* TouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
-		C292B97918C4299400B0440C /* TouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
-		C292B97A18C4299400B0440C /* TouchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewModel.h; sourceTree = "<group>"; };
-		C292B97B18C4299400B0440C /* TouchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewModel.m; sourceTree = "<group>"; };
-		C292B97C18C4299400B0440C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		C292B97D18C4299400B0440C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		C2CF1D5518BDDCDA005A582B /* ifengNewsOrderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ifengNewsOrderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CF1D5818BDDCDA005A582B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2CF1D5A18BDDCDA005A582B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -102,28 +74,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C292B96C18C4299400B0440C /* OrderButton */ = {
-			isa = PBXGroup;
-			children = (
-				C292B96D18C4299400B0440C /* Header.h */,
-				C292B97218C4299400B0440C /* OrderButton.h */,
-				C292B97318C4299400B0440C /* OrderButton.m */,
-				C292B97418C4299400B0440C /* OrderViewController.h */,
-				C292B97518C4299400B0440C /* OrderViewController.m */,
-				C292B97818C4299400B0440C /* TouchView.h */,
-				C292B97918C4299400B0440C /* TouchView.m */,
-				C292B97A18C4299400B0440C /* TouchViewModel.h */,
-				C292B97B18C4299400B0440C /* TouchViewModel.m */,
-				C292B96E18C4299400B0440C /* order_back.png */,
-				C292B96F18C4299400B0440C /* order_back_select.png */,
-				C292B97018C4299400B0440C /* order_background.png */,
-				C292B97118C4299400B0440C /* order_drag_move_bg.png */,
-				C292B97618C4299400B0440C /* topnav_orderbutton.png */,
-				C292B97718C4299400B0440C /* topnav_orderbutton_selected_unselected.png */,
-			);
-			path = OrderButton;
-			sourceTree = "<group>";
-		};
 		C2CF1D4C18BDDCDA005A582B = {
 			isa = PBXGroup;
 			children = (
@@ -159,9 +109,6 @@
 			children = (
 				C2CF1D6718BDDCDA005A582B /* AppDelegate.h */,
 				C2CF1D6818BDDCDA005A582B /* AppDelegate.m */,
-				C292B97C18C4299400B0440C /* RootViewController.h */,
-				C292B97D18C4299400B0440C /* RootViewController.m */,
-				C292B96C18C4299400B0440C /* OrderButton */,
 				C2CF1D6A18BDDCDA005A582B /* Images.xcassets */,
 				C2CF1D5F18BDDCDA005A582B /* Supporting Files */,
 			);
@@ -272,14 +219,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C292B98118C4299400B0440C /* order_drag_move_bg.png in Resources */,
 				C2CF1D6318BDDCDA005A582B /* InfoPlist.strings in Resources */,
-				C292B97E18C4299400B0440C /* order_back.png in Resources */,
 				C2CF1D6B18BDDCDA005A582B /* Images.xcassets in Resources */,
-				C292B97F18C4299400B0440C /* order_back_select.png in Resources */,
-				C292B98018C4299400B0440C /* order_background.png in Resources */,
-				C292B98418C4299400B0440C /* topnav_orderbutton.png in Resources */,
-				C292B98518C4299400B0440C /* topnav_orderbutton_selected_unselected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,13 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C292B98618C4299400B0440C /* TouchView.m in Sources */,
-				C292B98818C4299400B0440C /* RootViewController.m in Sources */,
 				C2CF1D6918BDDCDA005A582B /* AppDelegate.m in Sources */,
 				C2CF1D6518BDDCDA005A582B /* main.m in Sources */,
-				C292B98218C4299400B0440C /* OrderButton.m in Sources */,
-				C292B98718C4299400B0440C /* TouchViewModel.m in Sources */,
-				C292B98318C4299400B0440C /* OrderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,13 +361,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: YaYun Cui (QG9C9G6T78)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ifengNewsOrderDemo/ifengNewsOrderDemo-Prefix.pch";
 				INFOPLIST_FILE = "ifengNewsOrderDemo/ifengNewsOrderDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E51CF273-0C5B-455B-97E2-599430489CF5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -441,13 +374,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: YaYun Cui (QG9C9G6T78)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ifengNewsOrderDemo/ifengNewsOrderDemo-Prefix.pch";
 				INFOPLIST_FILE = "ifengNewsOrderDemo/ifengNewsOrderDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E51CF273-0C5B-455B-97E2-599430489CF5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -513,7 +443,6 @@
 				C2CF1D8318BDDCDA005A582B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		C2CF1D8418BDDCDA005A582B /* Build configuration list for PBXNativeTarget "ifengNewsOrderDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,7 +451,6 @@
 				C2CF1D8618BDDCDA005A582B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
