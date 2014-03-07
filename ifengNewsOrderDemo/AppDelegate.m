@@ -2,19 +2,36 @@
 //  AppDelegate.m
 //  ifengNewsOrderDemo
 //
-//  Created by lanou3g on 14-2-26.
-//  Copyright (c) 2014年 lanou3g. All rights reserved.
+//  Created by zer0 on 14-2-26.
+//  Copyright (c) 2014年 zer0. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    RootViewController * root = [[RootViewController alloc] init];
+    [self.window setRootViewController:root];
+    [root release];
+    
+    
+//    NSString * string = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+//    NSString * filePath = [string stringByAppendingString:@"/modelArray0.swh"];
+//    NSString * filePath1 = [string stringByAppendingString:@"/modelArray1.swh"];
+//    [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
+//    [[NSFileManager defaultManager] removeItemAtPath:filePath1 error:nil];
+    //
+    //如自己定制频道列表和接口须仅在首次运行时解注上面5行代码
+    //
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
