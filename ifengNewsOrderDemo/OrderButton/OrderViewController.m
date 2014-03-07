@@ -133,44 +133,16 @@
     
 
     
-    
 
-    
-
-    UIButton * backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [backButton setFrame:CGRectMake(self.view.bounds.size.width - 56, self.view.bounds.size.height - 44, 56, 44)];
-    [backButton setImage:[UIImage imageNamed:@"order_back.png"] forState:UIControlStateNormal];
-    [backButton setImage:[UIImage imageNamed:@"order_back_select.png"] forState:UIControlStateNormal];
-    [backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:backButton];
-}
-- (void)backAction{
-    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
-        [self.view setFrame:CGRectMake(0, - self.view.bounds.size.height, self.view.bounds.size.width, self.view.bounds.size.height)];
-        
-    } completion:^(BOOL finished){
-        NSString * string = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-        NSString * filePath = [string stringByAppendingString:@"/modelArray0.swh"];
-        NSString * filePath1 = [string stringByAppendingString:@"/modelArray1.swh"];
-        NSMutableArray * modelArr = [NSMutableArray array];
-        for (TouchView * touchView in _viewArr1) {
-            [modelArr addObject:touchView.touchViewModel];
-        }
-        NSData * data = [NSKeyedArchiver archivedDataWithRootObject:modelArr];
-        [data writeToFile:filePath atomically:YES];
-        [modelArr removeAllObjects];
-        for (TouchView * touchView in _viewArr2) {
-            [modelArr addObject:touchView.touchViewModel];
-        }
-        data = [NSKeyedArchiver archivedDataWithRootObject:modelArr];
-        [data writeToFile:filePath1 atomically:YES];
-        [self.view removeFromSuperview];
-        [self release];
-    }];
-    
+    self.backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.backButton setFrame:CGRectMake(self.view.bounds.size.width - 56, self.view.bounds.size.height - 44, 56, 44)];
+    [self.backButton setImage:[UIImage imageNamed:@"order_back.png"] forState:UIControlStateNormal];
+    [self.backButton setImage:[UIImage imageNamed:@"order_back_select.png"] forState:UIControlStateNormal];
+    [self.view addSubview:self.backButton];
 }
 
 - (void)dealloc{
+    [_backButton release];
     [_titleArr release];
     [_urlStringArr release];
     [_titleLabel2 release];

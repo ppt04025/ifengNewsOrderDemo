@@ -11,9 +11,9 @@
 @implementation TouchView
 - (void)dealloc
 {
-    [self.label release];
-    [self.moreChannelsLabel release];
-    [self.touchViewModel release];
+    [_label release];
+    [_moreChannelsLabel release];
+    [_touchViewModel release];
     [super dealloc];
 }
 - (id)initWithFrame:(CGRect)frame
@@ -23,7 +23,9 @@
         // Initialization code
         self.multipleTouchEnabled = YES;
         self.userInteractionEnabled = YES;
-        self.label = [[UILabel alloc] initWithFrame:CGRectZero];
+        UILabel *l = [[UILabel alloc] initWithFrame:CGRectZero];
+        self.label = l;
+        [l release];
         _sign = 0;
         
     }
@@ -35,7 +37,7 @@
     [self.label setFrame:CGRectMake(1, 1, ButtonWidth - 2, ButtonHeight - 2)];
     [self.label setBackgroundColor:[UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1.0]];
     [self addSubview:self.label];
-    [_label release];
+    
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     

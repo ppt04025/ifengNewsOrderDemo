@@ -10,6 +10,7 @@
 
 @interface OrderViewController : UIViewController
 {
+    @public
     NSArray * _modelArr1;
     NSMutableArray * _viewArr1;
     NSMutableArray * _viewArr2;
@@ -19,4 +20,5 @@
 @property (nonatomic,retain)UILabel * titleLabel2;
 @property (nonatomic,retain)NSArray * titleArr;
 @property (nonatomic,retain)NSArray * urlStringArr;
+@property (nonatomic,retain)UIButton * backButton;
 @end

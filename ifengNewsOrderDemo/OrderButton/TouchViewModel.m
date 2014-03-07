@@ -11,8 +11,8 @@
 @implementation TouchViewModel
 - (void)dealloc
 {
-    [self.title release];
-    [self.urlString release];
+    [_title release];
+    [_urlString release];
     [super dealloc];
 }
 - (void)encodeWithCoder:(NSCoder *)aCoder{
