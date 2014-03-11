@@ -10,7 +10,7 @@
 
 @interface TouchViewModel : NSObject<NSCoding>
 
-@property (nonatomic,retain) NSString * title;
-@property (nonatomic,retain) NSString * urlString;
+@property (nonatomic,strong) NSString * title;
+@property (nonatomic,strong) NSString * urlString;
 - (id)initWithTitle:(NSString *)title urlString:(NSString *)urlString;
 @end

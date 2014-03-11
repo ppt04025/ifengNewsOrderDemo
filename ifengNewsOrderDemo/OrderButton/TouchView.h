@@ -19,7 +19,7 @@
     NSMutableArray * _viewArr11;
     NSMutableArray * _viewArr22;
 }
-@property (nonatomic,retain) UILabel * label;
-@property (nonatomic,retain) UILabel * moreChannelsLabel;
-@property (nonatomic,retain) TouchViewModel * touchViewModel;
+@property (nonatomic,strong) UILabel * label;
+@property (nonatomic,strong) UILabel * moreChannelsLabel;
+@property (nonatomic,strong) TouchViewModel * touchViewModel;
 @end

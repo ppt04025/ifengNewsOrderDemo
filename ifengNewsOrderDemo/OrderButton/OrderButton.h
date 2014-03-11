@@ -10,9 +10,9 @@
 
 @interface OrderButton : UIButton
 
-@property (nonatomic,retain) UIViewController * vc;
-@property (nonatomic,retain) NSArray * titleArr;
-@property (nonatomic,retain) NSArray * urlStringArr;
+@property (nonatomic,strong) UIViewController * vc;
+@property (nonatomic,strong) NSArray * titleArr;
+@property (nonatomic,strong) NSArray * urlStringArr;
 
 + (id)orderButtonWithViewController:(UIViewController *)vc titleArr:(NSArray *)titleArr urlStringArr:(NSArray *)urlStringArr;
 @end

@@ -44,7 +44,7 @@
         //        [[[orderButton.vc.view subviews]objectAtIndex:1] removeFromSuperview];
         NSLog(@"%@",[orderButton.vc.view subviews]);
     }
-    OrderViewController * orderVC = [[[OrderViewController alloc] init] autorelease];
+    OrderViewController * orderVC = [[OrderViewController alloc] init];
     orderVC.titleArr = orderButton.titleArr;
     orderVC.urlStringArr = orderButton.urlStringArr;
     UIView * orderView = [orderVC view];

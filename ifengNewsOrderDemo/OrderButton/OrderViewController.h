@@ -16,9 +16,9 @@
     NSMutableArray * _viewArr2;
 }
 
-@property (nonatomic,retain)UILabel * titleLabel;
-@property (nonatomic,retain)UILabel * titleLabel2;
-@property (nonatomic,retain)NSArray * titleArr;
-@property (nonatomic,retain)NSArray * urlStringArr;
-@property (nonatomic,retain)UIButton * backButton;
+@property (nonatomic,strong)UILabel * titleLabel;
+@property (nonatomic,strong)UILabel * titleLabel2;
+@property (nonatomic,strong)NSArray * titleArr;
+@property (nonatomic,strong)NSArray * urlStringArr;
+@property (nonatomic,strong)UIButton * backButton;
 @end

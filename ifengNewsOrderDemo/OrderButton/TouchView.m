@@ -9,13 +9,6 @@
 #import "TouchView.h"
 
 @implementation TouchView
-- (void)dealloc
-{
-    [_label release];
-    [_moreChannelsLabel release];
-    [_touchViewModel release];
-    [super dealloc];
-}
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -25,7 +18,6 @@
         self.userInteractionEnabled = YES;
         UILabel *l = [[UILabel alloc] initWithFrame:CGRectZero];
         self.label = l;
-        [l release];
         _sign = 0;
         
     }

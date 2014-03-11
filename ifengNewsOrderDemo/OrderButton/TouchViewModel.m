@@ -9,12 +9,6 @@
 #import "TouchViewModel.h"
 
 @implementation TouchViewModel
-- (void)dealloc
-{
-    [_title release];
-    [_urlString release];
-    [super dealloc];
-}
 - (void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeObject:self.title forKey:@"title"];
     [aCoder encodeObject:self.urlString forKey:@"urlString"];

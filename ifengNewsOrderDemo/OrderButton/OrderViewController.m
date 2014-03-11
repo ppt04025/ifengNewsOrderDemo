@@ -45,7 +45,6 @@
             NSString * urlString = [channelUrlStringListArr objectAtIndex:i];
             TouchViewModel * touchViewModel = [[TouchViewModel alloc] initWithTitle:title urlString:urlString];
             [mutArr addObject:touchViewModel];
-            [touchViewModel release];
             if (i == KDefaultCountOfUpsideList - 1) {
                 NSData * data = [NSKeyedArchiver archivedDataWithRootObject:mutArr];
                 [data writeToFile:filePath atomically:YES];
@@ -89,7 +88,6 @@
         [touchView setBackgroundColor:[UIColor colorWithRed:210/255.0 green:210/255.0 blue:210/255.0 alpha:1.0]];
         
         [_viewArr1 addObject:touchView];
-        [touchView release];
         touchView->_array = _viewArr1;
         if (i == 0) {
             [touchView.label setTextColor:[UIColor colorWithRed:187/255.0 green:1/255.0 blue:1/255.0 alpha:1.0]];
@@ -126,7 +124,6 @@
         
         [self.view addSubview:touchView];
         
-        [touchView release];
         
     }
     
@@ -141,16 +138,6 @@
     [self.view addSubview:self.backButton];
 }
 
-- (void)dealloc{
-    [_backButton release];
-    [_titleArr release];
-    [_urlStringArr release];
-    [_titleLabel2 release];
-    [_titleLabel release];
-    [_viewArr1 release];
-    [_viewArr2 release];
-    [super dealloc];
-}
 
 
 - (unsigned long )array2StartY{
