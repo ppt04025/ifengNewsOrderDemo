@@ -56,50 +56,27 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     
-    UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:self.superview];
-    int a = point.x - _point.x;
-    int b = point.y - _point.y;
-    
-    
-    if (![self.label.text isEqualToString:@"头条"]) {
-        [self.label setBackgroundColor:[UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1.0]];
-        [self setImage:nil];
-        
-        if (_sign == 0) {
-            if (_array == _viewArr11) {
-                [_viewArr11 removeObject:self];
-                [_viewArr22 insertObject:self atIndex:_viewArr22.count];
-                _array = _viewArr22;
-                [self animationAction];
-            }
-            else if ( _array == _viewArr22){
-                [_viewArr22 removeObject:self];
-                [_viewArr11 insertObject:self atIndex:_viewArr11.count];
-                _array = _viewArr11;
-                [self animationAction];
-            }
-        }
-        
-        
-        else if (([self buttonInArrayArea1:_viewArr11 Point:point] || [self buttonInArrayArea2:_viewArr22 Point:point])&&!(point.x - _point.x > KTableStartPointX && point.x - _point.x < KTableStartPointX + KButtonWidth && point.y - _point.y > KTableStartPointY && point.y - _point.y < KTableStartPointY + KButtonHeight)){
-            if (point.x < KTableStartPointX || point.y < KTableStartPointY) {
-                [self setFrame:CGRectMake(_point2.x - _point.x, _point2.y - _point.y, self.frame.size.width, self.frame.size.height)];
-            }
-            else{
-                [self setFrame:CGRectMake(KTableStartPointX + (a + KButtonWidth/2 - KTableStartPointX)/KButtonWidth*KButtonWidth, KTableStartPointY + (b + KButtonHeight/2 - KTableStartPointY)/KButtonHeight*KButtonHeight, self.frame.size.width, self.frame.size.height)];
-            }
-            
-        }
-        else{
-            
-            [self animationAction];
-            
-        }
-        _sign = 0;
-    }
     [self.label setBackgroundColor:[UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1.0]];
     [self setImage:nil];
+    
+    if (_sign == 0) {
+        if (_array == _viewArr11) {
+            [_viewArr11 removeObject:self];
+            [_viewArr22 insertObject:self atIndex:_viewArr22.count];
+            _array = _viewArr22;
+        }
+        else if (_array == _viewArr22){
+            [_viewArr22 removeObject:self];
+            [_viewArr11 insertObject:self atIndex:_viewArr11.count];
+            _array = _viewArr11;
+        }
+        
+    }
+    
+    [self animationAction];
+    
+    _sign = 0;
+
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
