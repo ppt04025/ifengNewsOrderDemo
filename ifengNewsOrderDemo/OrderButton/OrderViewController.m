@@ -76,7 +76,7 @@
     
     
     
-    _titleLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(110, KTableStartPointY + KButtonHeight * ([self array2StartY] - 1) + 22, 100, 20)];
+    _titleLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(110, KTableStartPointY + KButtonHeight * ([self array2StartY] - 1) + KMoreChannelDeltaHeight, 100, 20)];
     _titleLabel2.text = @"更多频道";
     [_titleLabel2 setFont:[UIFont systemFontOfSize:10]];
     [_titleLabel2 setTextAlignment:NSTextAlignmentCenter];
@@ -109,7 +109,7 @@
     }
     
     for (int i = 0; i < modelArr2.count; i++) {
-        TouchView * touchView = [[TouchView alloc] initWithFrame:CGRectMake(KTableStartPointX + KButtonWidth * (i%5), KTableStartPointY + [self array2StartY] * KButtonHeight + KButtonHeight * (i/5), KButtonWidth, KButtonHeight)];
+        TouchView * touchView = [[TouchView alloc] initWithFrame:CGRectMake(KTableStartPointX + KButtonWidth * (i%5), KTableStartPointY + KDeltaHeight + [self array2StartY] * KButtonHeight + KButtonHeight * (i/5)  , KButtonWidth, KButtonHeight)];
         
         [touchView setBackgroundColor:[UIColor colorWithRed:210/255.0 green:210/255.0 blue:210/255.0 alpha:1.0]];
         
