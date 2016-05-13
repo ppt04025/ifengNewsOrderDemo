@@ -1,3 +1,4 @@
 language: objective-c
 xcode_project: ifengNewsOrderDemo.xcodeproj # path to your xcodeproj folder
 xcode_scheme: ifengNewsOrderDemo
+xcode_sdk: iphonesimulator9.2
