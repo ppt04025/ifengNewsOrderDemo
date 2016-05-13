@@ -1,4 +1,3 @@
 language: objective-c
-osx_image: xcode7.1
 xcode_project: ifengNewsOrderDemo.xcodeproj # path to your xcodeproj folder
 xcode_scheme: ifengNewsOrderDemo
