@@ -244,9 +244,6 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = lanou3g;
 				TargetAttributes = {
-					C2CF1D5418BDDCDA005A582B = {
-						DevelopmentTeam = RDXA57Y2VS;
-					};
 					C2CF1D6F18BDDCDA005A582B = {
 						TestTargetID = C2CF1D5418BDDCDA005A582B;
 					};
@@ -430,7 +427,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ifengNewsOrderDemo/ifengNewsOrderDemo-Prefix.pch";
 				INFOPLIST_FILE = "ifengNewsOrderDemo/ifengNewsOrderDemo-Info.plist";
@@ -447,7 +444,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ifengNewsOrderDemo/ifengNewsOrderDemo-Prefix.pch";
 				INFOPLIST_FILE = "ifengNewsOrderDemo/ifengNewsOrderDemo-Info.plist";
