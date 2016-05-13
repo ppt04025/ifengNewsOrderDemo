@@ -245,7 +245,7 @@
 				ORGANIZATIONNAME = lanou3g;
 				TargetAttributes = {
 					C2CF1D5418BDDCDA005A582B = {
-						DevelopmentTeam = ZVK7B3M99Q;
+						DevelopmentTeam = RDXA57Y2VS;
 					};
 					C2CF1D6F18BDDCDA005A582B = {
 						TestTargetID = C2CF1D5418BDDCDA005A582B;
