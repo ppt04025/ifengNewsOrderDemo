@@ -3,4 +3,4 @@ xcode_project: ifengNewsOrderDemo.xcodeproj # path to your xcodeproj folder
 xcode_scheme: ifengNewsOrderDemo
 xcode_sdk: iphonesimulator
 script:
-- xctool -project ifengNewsOrderDemo.xcodeproj -scheme ifengNewsOrderDemo -sdk iphonesimulator9.2 build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- xctool -project ifengNewsOrderDemo.xcodeproj -scheme ifengNewsOrderDemo -sdk iphonesimulator build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
